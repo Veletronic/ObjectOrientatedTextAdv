@@ -23,4 +23,14 @@ Kitchen.link_room(Dining, "south")
 Kitchen.link_room(HiddenBasement, "west")
 Dining.link_room(Kitchen, "north")
 Dining.link_room(Ballroom, "west")
-Ballroom.linkroom(
+Ballroom.link_room(Dining, "east")
+
+#Dining.get_description() checks linked rooms
+
+current_room = Kitchen          
+
+while True:		
+    print("\n")         
+    current_room.get_details()         
+    command = input("> ")    
+    current_room = current_room.move(command) 
