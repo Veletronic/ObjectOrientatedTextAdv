@@ -1,4 +1,5 @@
 from Room import room
+from Item import Item
 
 Kitchen = room("Kitchen")
 Kitchen.set_description("The room sparkles and glistens, the surface of the floor reflects your image perfectly...a little too perfectly")
@@ -24,6 +25,24 @@ Kitchen.link_room(HiddenBasement, "west")
 Dining.link_room(Kitchen, "north")
 Dining.link_room(Ballroom, "west")
 Ballroom.link_room(Dining, "east")
+
+DiamondKey = Item("Diamond Key")
+DiamondKey.set_itemdescription("""A rusted silver key with a diamond shaped head with a ruby embedded in it.""")
+
+SpadesKey = Item("Spades Key")
+SpadesKey.set_itemdescription("""A pristine gold key with a spade shaped head with an emerald embedded in it""")
+
+Pebble = Item("Pebble")
+Pebble.set_itemdescription("""A cold and pathetically tiny pebble..what use could you have for this?""")
+
+PillBottle = Item("A pill bottle?")
+PillBottle.setitemdescription("""A plain and unlabelled pill bottle.
+you shake it and hear some musical rattling, how wonderful.""")
+
+
+
+
+
 
 #Dining.get_description() checks linked rooms
 

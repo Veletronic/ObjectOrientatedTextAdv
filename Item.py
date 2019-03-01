@@ -1,20 +1,26 @@
 class Item:
     def __init__(self, item):
-        self.item = None
+        self.item = item
         self.description = None
         self.activate = None
-        self.exists = {}
-    def SetDescription(self, description):
+        self.inventory = {}
+    def set_description(self, description):
         self.description = description
-    def GetDescription(self):
-        return self.description
-    def SetItemName(self, itemname):
+    def get_description(self):
+        print (self.description)
+    def set_itemName(self, itemname):
         self.item = itemname
-    def GetItemName(self):
-        print self.item
+    def get_itemname(self):
+        print (self.item)
     def describe(self):
-        GetDescription(self)
-        GetItemName(self)
-    def find(self, examine):
+        Item.get_description(self)
+        Item.get_itemname(self)
+
+        
+        
+
+            
+            
+        
     
         
